@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Chicle&family=Josefin+Sans:wght@100&family=Lora&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
+
+
+body {
+    background-color: #ece42c;
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Chicle', serif;
+        background-color: #333;
+        max-width: auto;
+        .header_logo{
+            align-items: start;
+            img{
+                width: 20%;
+            }
+        }  
+    }
+    h1 {
+        font-family: 'Bruno Ace SC', sans-serif;
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    h1, h2 {
+        text-align: center;
+        color: black;
+    }
+    .texto {
+        text-align: center;
+        color: black;
+        }
+    div.esquemasGrid {
+        align-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 170px 170px;
+        margin: auto auto 80px 80px;
+        gap: 25px;  
+        .galeria , .clases , .packClases , .contacto {
+            background: linear-gradient(38deg, black, yellow 40% ); 
+            margin: 50px 10px;
+            width: 320px;
+            height: 160px;
+            padding: 20px;
+            border-color: black;
+            border: 2px solid black;
+            color: black;
+            display: inline;
+        } 
+        ul {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 28px;
+            list-style: none;
+            font-weight: bold;
+            text-align: center;
+            padding-left: 0;
+            text-decoration: none;
+           
+        }   
+        
+        
+}
+    section.foto {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px; 
+}
+       
+    }
+    a {
+        outline: none;
+        text-decoration: none;
+    }
+    a.link:link {
+        color: aqua;
+    }
+    a.link:visited {
+        color: aqua;
+    }
+    a.link:hover {
+        border-bottom:  1px solid;
+    }
+    a.link:focus {
+        border-bottom: 2px solid;
+        background: #333;
+    }
+    a.link:active {
+        background: #265301;
+        color: #cdfeaa;
+    }
+    .videos iframe {
+    width: 600px;
+    height: 400px;
+    }
+    .consulta {
+        display: flex;    
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .botones {
+        padding: 5px;
+    }
+    .enviar  {
+        margin: 5px 0px 5px 0px;
+    }
+    .reset  {
+        margin-bottom: 5px;
+    }
+    footer {
+    background-color: #333;
+    .gMaps {
+        padding: 20px;
+    }
+}
+.parraPrincipal {
+    text-align: center;
+}   
+.eligeClases {
+    margin-top: 0px;
+    align-self: center;
+    width: 150px;
+    display: grid;
+    justify-items: start;
+    grid-template-columns: auto auto;
+    column-gap: 1px;
+    row-gap: 1px;
+    padding: 5px 5px 5px 5px;
+    }
+.promoClases {
+    margin-top: 0px;
+    align-self: center;
+    width: 250px;
+    display: grid;
+    justify-items: start;
+    grid-template-columns: auto auto;
+    column-gap: 1px;
+    row-gap: 1px;
+    padding: 5px 5px 5px 5px;
+/*     display: inline;
+    flex-direction: row;
+    max-width: 400px;
+    padding: 5px;
+    margin-bottom: 10px; */
+    }
+div.datoComprador {
+    padding: 5px;
+    display: flex;    
+    flex-direction: column;
+    max-width: 400px;
+}
+.paquetes {
+    font-size: 20px;
+    border: 2px solid;
+    display: flex;    
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.subtituloClase, .subTitulo {
+    text-decoration: underline;
+    font-family: 'chicle', serif;
+    font-size: 30px;
+    margin: 5px 0px 0px 0px;
+}
+
+.botones {
+    align-self: center;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+.redondeado {
+    align-items: center;
+    width: 130px;
+    border-radius: 5px;
+}
+.paquetes input {
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+
+    div.esquemasGrid {
+        align-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 170px;
+        margin: auto auto 80px 80px;
+        gap: 25px;
+    }
+
+    section.galeria .clases .packClases .contacto {
+        align-items: center;
+        display: grid;
+        margin: 50px 10px;
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    section.foto {
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-column: 1fr;
+        padding: 5px; 
+    }
+    section.videos {
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-column: 1fr;
+        padding: 5px; 
+    }
+}
