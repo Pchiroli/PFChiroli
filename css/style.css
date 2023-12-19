@@ -129,6 +129,10 @@ a.link:active {
 }
 
 .botones {
+  align-self: center;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 5px;
 }
 
@@ -202,6 +206,10 @@ div.datoComprador {
   margin-bottom: 15px;
 }
 
+input[type=submit], input[type=reset] {
+  align-content: center;
+}
+
 .subtituloClase, .subTitulo {
   text-decoration: underline;
   font-family: "chicle", serif;
@@ -209,17 +217,23 @@ div.datoComprador {
   margin: 5px 0px 0px 0px;
 }
 
-.botones {
-  align-self: center;
-  width: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
+/* .botones {
+    align-self: center;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  } */
 .redondeado {
   align-items: center;
-  width: 130px;
   border-radius: 5px;
+}
+
+.submit, .reset {
+  align-items: center;
+  width: 130px;
+  height: 28px;
+  border-radius: 5px;
+  justify-self: center;
 }
 
 .paquetes input {
@@ -274,10 +288,5 @@ div.datoComprador {
     height: auto;
     grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
     padding: 5px;
-    /* justify-items: center;
-    display: grid;
-    width: auto;
-    height: auto;
-    padding: 5px;  */
   }
 }/*# sourceMappingURL=style.css.map */

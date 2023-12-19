@@ -124,7 +124,11 @@ body {
         max-width: 300px;
         margin: 0 auto;
     }
-    .botones {
+    .botones { 
+        align-self: center;
+        width: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         padding: 5px;
     }
     .enviar  {
@@ -188,6 +192,9 @@ div.datoComprador {
     text-align: center;
     margin-bottom: 15px;
 }
+div.botones input[type="submit"] {
+    align-content: ;
+}
 
 .subtituloClase, .subTitulo {
     text-decoration: underline;
@@ -196,16 +203,23 @@ div.datoComprador {
     margin: 5px 0px 0px 0px;
 }
 
-.botones {
+/* .botones {
     align-self: center;
     width: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 .redondeado {
     align-items: center;
-    width: 130px;
     border-radius: 5px;
+}
+.submit, .reset {
+        align-items: center;
+        width: 130px;
+        height: 28px;
+        border-radius: 5px;
+        justify-self: center;
+
 }
 .paquetes input {
     border-radius: 5px;
@@ -264,10 +278,6 @@ div.datoComprador {
         height: auto;
         grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
         padding: 5px; 
-        /* justify-items: center;
-        display: grid;
-        width: auto;
-        height: auto;
-        padding: 5px;  */
+    
     }
 }
