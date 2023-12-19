@@ -9,6 +9,7 @@ body {
   background-color: #ece42c;
 }
 body header {
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,8 +70,12 @@ body section.foto {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   padding: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-items: stretch;
 }
 
 a {
@@ -100,6 +105,17 @@ a.link:active {
   color: #cdfeaa;
 }
 
+.videos {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  justify-items: center;
+  grid-row-gap: 5px;
+}
 .videos iframe {
   width: 600px;
   height: 400px;
@@ -126,9 +142,16 @@ a.link:active {
 
 footer {
   background-color: #333;
-}
-footer .gMaps {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+footer iframe {
+  width: 70%;
+  height: 80%;
+  border: none;
 }
 
 .parraPrincipal {
@@ -159,11 +182,6 @@ footer .gMaps {
        column-gap: 1px;
   row-gap: 1px;
   padding: 5px 5px 5px 5px;
-  /*     display: inline;
-      flex-direction: row;
-      max-width: 400px;
-      padding: 5px;
-      margin-bottom: 10px; */
 }
 
 div.datoComprador {
@@ -209,6 +227,20 @@ div.datoComprador {
 }
 
 @media (max-width: 768px) {
+  body {
+    width: auto;
+    max-width: 766px;
+  }
+  header {
+    max-width: 768px;
+  }
+  h1 {
+    max-width: 768px;
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 15px;
+  }
   div.esquemasGrid {
     align-content: center;
     display: grid;
@@ -225,18 +257,27 @@ div.datoComprador {
     height: auto;
     padding: 20px;
   }
-  section.foto {
+  body section.foto {
+    justify-items: stretch;
     display: grid;
+    max-width: 760px;
     width: auto;
     height: auto;
-    grid-column: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
     padding: 5px;
   }
-  section.videos {
+  .videos {
+    justify-items: center;
+    display: grid;
+    max-width: 760px;
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+    padding: 5px;
+    /* justify-items: center;
     display: grid;
     width: auto;
     height: auto;
-    grid-column: 1fr;
-    padding: 5px;
+    padding: 5px;  */
   }
 }/*# sourceMappingURL=style.css.map */
