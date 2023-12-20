@@ -58,8 +58,8 @@ body div.esquemasGrid .galeria, body div.esquemasGrid .clases, body div.esquemas
   display: inline;
 }
 body div.esquemasGrid ul {
-  font-family: "Luckiest Guy", cursive;
-  font-size: 28px;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 20px;
   list-style: none;
   font-weight: bold;
   text-align: center;
@@ -84,11 +84,11 @@ a {
 }
 
 a.link:link {
-  color: aqua;
+  color: #B53AD6;
 }
 
 a.link:visited {
-  color: aqua;
+  color: #B53AD6;
 }
 
 a.link:hover {
@@ -206,10 +206,6 @@ div.datoComprador {
   margin-bottom: 15px;
 }
 
-input[type=submit], input[type=reset] {
-  align-content: center;
-}
-
 .subtituloClase, .subTitulo {
   text-decoration: underline;
   font-family: "chicle", serif;
@@ -217,12 +213,6 @@ input[type=submit], input[type=reset] {
   margin: 5px 0px 0px 0px;
 }
 
-/* .botones {
-    align-self: center;
-    width: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
 .redondeado {
   align-items: center;
   border-radius: 5px;

@@ -59,8 +59,8 @@ body {
             display: inline;
         } 
         ul {
-            font-family: 'Luckiest Guy', cursive;
-            font-size: 28px;
+            font-family: 'Bruno Ace SC', sans-serif;
+            font-size: 20px;
             list-style: none;
             font-weight: bold;
             text-align: center;
@@ -88,10 +88,10 @@ body {
         text-decoration: none;
     }
     a.link:link {
-        color: aqua;
+        color: #B53AD6;
     }
     a.link:visited {
-        color: aqua;
+        color: #B53AD6;
     }
     a.link:hover {
         border-bottom:  1px solid;
@@ -192,9 +192,7 @@ div.datoComprador {
     text-align: center;
     margin-bottom: 15px;
 }
-div.botones input[type="submit"] {
-    align-content: ;
-}
+
 
 .subtituloClase, .subTitulo {
     text-decoration: underline;
@@ -203,12 +201,6 @@ div.botones input[type="submit"] {
     margin: 5px 0px 0px 0px;
 }
 
-/* .botones {
-    align-self: center;
-    width: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
 .redondeado {
     align-items: center;
     border-radius: 5px;
