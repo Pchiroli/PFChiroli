@@ -231,35 +231,18 @@ div.datoComprador {
 }
 
 @media (max-width: 768px) {
-  body {
-    width: auto;
-    max-width: 766px;
-  }
-  header {
-    max-width: 768px;
-  }
-  h1 {
-    max-width: 768px;
+  body h1 {
     font-size: 30px;
   }
-  h2 {
+  body h2 {
     font-size: 15px;
   }
-  div.esquemasGrid {
+  body div.esquemasGrid {
     align-content: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 170px;
     margin: auto auto 80px 80px;
     gap: 25px;
-  }
-  section.galeria .clases .packClases .contacto {
-    align-items: center;
-    display: grid;
-    margin: 50px 10px;
-    width: auto;
-    height: auto;
-    padding: 20px;
   }
   body section.foto {
     justify-items: stretch;
@@ -278,5 +261,8 @@ div.datoComprador {
     height: auto;
     grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
     padding: 5px;
+  }
+  .titlePack {
+    font-size: 35px;
   }
 }/*# sourceMappingURL=style.css.map */
