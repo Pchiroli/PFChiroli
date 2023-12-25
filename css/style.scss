@@ -49,7 +49,7 @@ body {
         gap: 25px;  
         .galeria , .clases , .packClases , .contacto {
             background: linear-gradient(38deg, black, yellow 40% ); 
-            margin: 50px 10px;
+            margin: 10px 10px;
             width: 320px;
             height: 160px;
             padding: 20px;
@@ -145,12 +145,6 @@ body {
             border: none;
         }
     }
-.consulta {
-        display: flex;    
-        flex-direction: column;
-        max-width: 300px;
-        margin: 0 auto;
-    }
 
 div.eventos {
         display: flex;
@@ -190,7 +184,7 @@ div.datoComprador {
     flex-direction: column;
     max-width: 400px;
 }
-.paquetes {
+.paquetes, .consulta {
     font-size: 20px;
     border: 2px solid;
     display: flex;    
@@ -212,6 +206,8 @@ div.datoComprador {
 .redondeado {
     align-items: center;
     border-radius: 5px;
+    display: block;
+    width: 400px;
 }
 .submit, .reset {
         align-items: center;
@@ -228,22 +224,27 @@ div.datoComprador {
 @media (max-width: 768px) {
     
     body {
-        max-width: 768;
         width: auto;
     }
     
     body h1 {
+        width: auto;
         font-size: 30px;
     }
     body h2 {
+        width: auto;
         font-size: 15px;
     }
     body div.esquemasGrid {
+        justify-items: center;
         align-content: center;
         display: grid;
         grid-template-columns: 1fr;
         margin: auto auto 80px 80px;
         gap: 25px;
+    }
+    section.contacto {
+        margin: 10px 10px;
     }
     body section.foto {
         justify-items: stretch;

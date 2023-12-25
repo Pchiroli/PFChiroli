@@ -20,4 +20,4 @@ $asunto = 'Este mail fue enviado de la Web de La Colmena'
 //funcion mail
 //a quien le mando el email
 mail($para, $asunto, utf8_decode($mensaje), $header)
-header('location:index.html')
+header('<location:../index.html')
