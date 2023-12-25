@@ -68,7 +68,7 @@ body {
             text-decoration: none;
            
         }   
-        
+   
         
 }
     section.foto {
@@ -118,12 +118,7 @@ body {
             height: 400px;
         }
     }
-    .consulta {
-        display: flex;    
-        flex-direction: column;
-        max-width: 300px;
-        margin: 0 auto;
-    }
+    
     .botones { 
         align-self: center;
         width: 300px;
@@ -149,6 +144,19 @@ body {
             height: 80%;
             border: none;
         }
+    }
+.consulta {
+        display: flex;    
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+div.eventos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
 
 .parraPrincipal {
@@ -219,7 +227,10 @@ div.datoComprador {
 
 @media (max-width: 768px) {
     
-
+    body {
+        max-width: 768;
+        width: auto;
+    }
     
     body h1 {
         font-size: 30px;

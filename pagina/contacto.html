@@ -34,20 +34,22 @@
           </nav>                
     </header>
   <h1>Contactate con nosotros</h1>
-  <form class="consulta">
+  <div class="consulta">
+  <form action="from.php" method="post" ></form>
     <label for="nombre">Nombre</label>
-        <input class="redondeado" type="text" id="nombre" placeholder="Ingrese su nombre">
+        <input class="redondeado" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
     <label for="mail">Mail</label>
-        <input class="redondeado type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
+        <input class="redondeado" type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
     <label for="telefono">Telefono de Contacto</label>
-        <input class="redondeado" type="number" id="telefono" placeholder="Ingrese su Telefono">
+        <input class="redondeado" type="number" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
     <label for="mensaje">Ingrese su consulta</label>
-        <textarea class="redondeado" name="" id="mensaje" cols="30" rows="10"></textarea required>
+        <textarea class="redondeado" name="mensaje" id="mensaje" cols="30" rows="10"></textarea required>
   <div class="botones">
     <input class="submit" type="submit" value="Enviar">
     <input class="reset" type="reset" value="Borrar todo">
   </div>
     </form>
+  </div>
   <footer class="gMaps">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.0191028858376!2d-58.74839792481075!3d-38.556373676842455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958fbde33cf72785%3A0xd9898effeebb3b50!2sGimnasio%20Indigo!5e0!3m2!1ses!2sar!4v1698629149783!5m2!1ses!2sar" width="290" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
