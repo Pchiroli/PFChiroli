@@ -7,18 +7,24 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Chicle&family=Josefin+Sans:wght@100&family=Lora&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
 
-
+.navbar {
+    background-color: none;
+}
 body {
     background-color: #ece42c;
-    header{
+    header {
         width: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-family: 'Chicle', serif;
-        background-color: #333;
+/*         background-color: #333; */
+        background-image: url(../imagenes/honeyfondo.png);
+        background-position: center;
+        background-size: cover;
         max-width: auto;
         .header_logo{
+
             align-items: start;
             img{
                 width: 20%;
@@ -220,6 +226,7 @@ div.datoComprador {
 .paquetes input {
     border-radius: 5px;
 }
+
 
 @media (max-width: 768px) {
     

@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.navbar {
+  background-color: none;
+}
+
 body {
   background-color: #ece42c;
 }
@@ -14,7 +18,10 @@ body header {
   align-items: center;
   justify-content: space-between;
   font-family: "Chicle", serif;
-  background-color: #333;
+  /*         background-color: #333; */
+  background-image: url(../imagenes/honeyfondo.png);
+  background-position: center;
+  background-size: cover;
   max-width: auto;
 }
 body header .header_logo {
