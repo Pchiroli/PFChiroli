@@ -5,10 +5,79 @@
   padding: 0;
 }
 
+.paquetes, .consulta {
+  font-size: 20px;
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  max-width: 410px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px;
+  background-image: url(../imagenes/fondo1.png);
+  background-position: bottom;
+  color: white;
+}
+
+div.datoComprador {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.promoClases {
+  margin-top: 0px;
+  align-self: center;
+  width: 250px;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 1px;
+       column-gap: 1px;
+  row-gap: 1px;
+  padding: 5px 5px 5px 5px;
+}
+
+.botones {
+  align-self: center;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 17px;
+}
+
+.enviar {
+  margin: 10px 0px 5px 0px;
+}
+
+.reset {
+  margin-bottom: 5px;
+}
+
+.redondeado {
+  align-items: center;
+  border-radius: 5px;
+  display: block;
+  width: 400px;
+}
+
+.submit, .reset {
+  align-items: center;
+  width: 130px;
+  height: 28px;
+  border-radius: 5px;
+  justify-self: center;
+}
+
+.paquetes input {
+  border-radius: 5px;
+}
+
 body {
   background-color: #ece42c;
 }
-body header {
+body .header {
   width: auto;
   display: flex;
   align-items: center;
@@ -20,20 +89,20 @@ body header {
   background-size: cover;
   max-width: auto;
 }
-body header .header_logo {
+body .header_logo {
   align-items: start;
 }
-body header .header_logo img {
+body .header_logo img {
   width: 20%;
 }
 body h1 {
   font-family: "Bruno Ace SC", sans-serif;
   font-size: 70px;
+  text-align: center;
+  color: black;
 }
 body h2 {
   font-size: 50px;
-}
-body h1, body h2 {
   text-align: center;
   color: black;
 }
@@ -124,22 +193,6 @@ a.link:active {
   height: 400px;
 }
 
-.botones {
-  align-self: center;
-  width: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 5px;
-}
-
-.enviar {
-  margin: 5px 0px 5px 0px;
-}
-
-.reset {
-  margin-bottom: 5px;
-}
-
 footer {
   background-color: #333;
   padding: 20px;
@@ -177,64 +230,11 @@ div.eventos {
   padding: 5px 5px 5px 5px;
 }
 
-.promoClases {
-  margin-top: 0px;
-  align-self: center;
-  width: 250px;
-  display: grid;
-  justify-items: start;
-  grid-template-columns: auto auto;
-  -moz-column-gap: 1px;
-       column-gap: 1px;
-  row-gap: 1px;
-  padding: 5px 5px 5px 5px;
-}
-
-div.datoComprador {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-}
-
-.paquetes, .consulta {
-  font-size: 20px;
-  border: 2px solid;
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 15px;
-  background-image: url(../imagenes/fondo1.png);
-  background-position: bottom;
-  color: white;
-}
-
 .subtituloClase, .subTitulo {
   text-decoration: underline;
   font-family: "Bruno Ace SC", sans-serif;
   font-size: 30px;
   margin: 5px 0px 0px 0px;
-}
-
-.redondeado {
-  align-items: center;
-  border-radius: 5px;
-  display: block;
-  width: 400px;
-}
-
-.submit, .reset {
-  align-items: center;
-  width: 130px;
-  height: 28px;
-  border-radius: 5px;
-  justify-self: center;
-}
-
-.paquetes input {
-  border-radius: 5px;
 }
 
 @media (max-width: 768px) {

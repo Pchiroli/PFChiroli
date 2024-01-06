@@ -6,11 +6,11 @@
     
 }
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Chicle&family=Josefin+Sans:wght@100&family=Lora&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
-
+@import "formulario";
 
 body {
     background-color: #ece42c;
-    header {
+    .header {
         width: auto;
         display: flex;
         align-items: center;
@@ -21,8 +21,7 @@ body {
         background-position: center;
         background-size: cover;
         max-width: auto;
-        .header_logo{
-
+        &_logo{
             align-items: start;
             img{
                 width: 20%;
@@ -32,11 +31,11 @@ body {
     h1 {
         font-family: 'Bruno Ace SC', sans-serif;
         font-size: 70px;
+        text-align: center;
+        color: black;
     }
     h2 {
         font-size: 50px;
-    }
-    h1, h2 {
         text-align: center;
         color: black;
     }
@@ -70,10 +69,7 @@ body {
             text-align: center;
             padding-left: 0;
             text-decoration: none;
-           
         }   
-   
-        
 }
     section.foto {
         display: grid;
@@ -122,20 +118,6 @@ body {
             height: 400px;
         }
     }
-    
-    .botones { 
-        align-self: center;
-        width: 300px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 5px;
-    }
-    .enviar  {
-        margin: 5px 0px 5px 0px;
-    }
-    .reset  {
-        margin-bottom: 5px;
-    }
     footer {
         background-color: #333;
         padding: 20px;
@@ -171,65 +153,12 @@ div.eventos {
     row-gap: 1px;
     padding: 5px 5px 5px 5px;
     }
-.promoClases {
-    margin-top: 0px;
-    align-self: center;
-    width: 250px;
-    display: grid;
-    justify-items: start;
-    grid-template-columns: auto auto;
-    column-gap: 1px;
-    row-gap: 1px;
-    padding: 5px 5px 5px 5px;
-    }
-div.datoComprador {
-
-    padding: 5px;
-    display: flex;    
-    flex-direction: column;
-    max-width: 400px;
-
-}
-.paquetes, .consulta {
-    font-size: 20px;
-    border: 2px solid;
-    display: flex;    
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 15px;
-    background-image: url(../imagenes/fondo1.png);
-    background-position: bottom;
-    color: white;
-}
-
-
 .subtituloClase, .subTitulo {
     text-decoration: underline;
     font-family: "Bruno Ace SC", sans-serif;
     font-size: 30px;
     margin: 5px 0px 0px 0px;
 }
-
-.redondeado {
-    align-items: center;
-    border-radius: 5px;
-    display: block;
-    width: 400px;
-}
-.submit, .reset {
-        align-items: center;
-        width: 130px;
-        height: 28px;
-        border-radius: 5px;
-        justify-self: center;
-
-}
-.paquetes input {
-    border-radius: 5px;
-}
-
 
 @media (max-width: 768px) {
     
