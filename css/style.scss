@@ -7,11 +7,11 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Chicle&family=Josefin+Sans:wght@100&family=Lora&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
 @import "formulario";
-
+@import "navbar";
 body {
     background-color: #ece42c;
     .header {
-        width: auto;
+        width: fit-content;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -131,14 +131,11 @@ body {
             border: none;
         }
     }
-
 div.eventos {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
     }
-
 .parraPrincipal {
     text-align: center;
 }   
@@ -159,28 +156,29 @@ div.eventos {
     font-size: 30px;
     margin: 5px 0px 0px 0px;
 }
-
 @media (max-width: 768px) {
+    //768
     
     body {
-        width: auto;
+        width: max-content;
     }
     
-    body h1 {
+    h1 {
         width: auto;
         font-size: 30px;
     }
-    body h2 {
+    h2 {
         width: auto;
         font-size: 15px;
     }
-    body div.esquemasGrid {
+    div.esquemasGrid {
         justify-items: center;
         align-content: center;
         display: grid;
         grid-template-columns: 1fr;
         margin: auto auto 80px auto;
         gap: 25px;
+        width: fit-content;
     }
     section.contacto {
         margin: 10px 10px;
@@ -189,9 +187,9 @@ div.eventos {
         justify-items: stretch;
         display: grid;
         max-width: 760px;
-        width: auto;
+        width: 100%;
         height: auto;
-        grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+        grid-template-columns: 1fr;
         padding: 5px; 
         
     }
@@ -201,7 +199,7 @@ div.eventos {
         max-width: 760px;
         width: auto;
         height: auto;
-        grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+        grid-template-columns: 1fr;
         padding: 5px; 
     
     }
