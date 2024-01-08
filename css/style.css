@@ -128,13 +128,13 @@ body div.esquemasGrid .galeria, body div.esquemasGrid .clases, body div.esquemas
   border: 2px solid black;
   color: black;
   display: inline;
+  text-align: center;
 }
-body div.esquemasGrid ul {
+body div.esquemasGrid .link {
   font-family: "Bruno Ace SC", sans-serif;
   font-size: 20px;
   list-style: none;
   font-weight: bold;
-  text-align: center;
   padding-left: 0;
   text-decoration: none;
 }
@@ -237,27 +237,25 @@ div.eventos {
   margin: 5px 0px 0px 0px;
 }
 
-@media (max-width: 1000px) {
-  .navbar navbar-expand-lg bg-body-tertiary {
-    width: -moz-max-content;
-    width: max-content;
-  }
+@media (max-width: 768px) {
   body {
-    width: auto;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  body h1 {
+  h1 {
     width: auto;
     font-size: 30px;
   }
-  body h2 {
+  h2 {
     width: auto;
     font-size: 15px;
   }
-  body div.esquemasGrid {
+  div.esquemasGrid {
     justify-items: center;
     align-content: center;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 170px;
     margin: auto auto 80px auto;
     gap: 25px;
   }
@@ -268,11 +266,10 @@ div.eventos {
     justify-items: stretch;
     display: grid;
     max-width: 760px;
-    width: auto;
+    width: 100%;
     height: auto;
     grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
     padding: 5px;
-    overflow-x: inherit;
   }
   .videos {
     justify-items: center;
@@ -280,7 +277,7 @@ div.eventos {
     max-width: 760px;
     width: auto;
     height: auto;
-    grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+    grid-template-columns: 1fr;
     padding: 5px;
   }
   .titlePack {

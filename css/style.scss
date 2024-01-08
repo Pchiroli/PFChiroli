@@ -7,11 +7,12 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Chicle&family=Josefin+Sans:wght@100&family=Lora&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
 @import "formulario";
-@import "navbar";
+@import "vars";
+@import "mixin";
 body {
     background-color: #ece42c;
     .header {
-        width: fit-content;
+        width: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -29,19 +30,16 @@ body {
         }  
     }
     h1 {
-        font-family: 'Bruno Ace SC', sans-serif;
+        font-family: $fuentebruno;
         font-size: 70px;
-        text-align: center;
-        color: black;
+        @include texto-negro-center;
     }
     h2 {
         font-size: 50px;
-        text-align: center;
-        color: black;
+        @include texto-negro-center;
     }
     .texto {
-        text-align: center;
-        color: black;
+        @include texto-negro-center;
         }
     div.esquemasGrid {
         align-content: space-around;
@@ -51,22 +49,22 @@ body {
         margin: auto auto 80px 80px;
         gap: 25px;  
         .galeria , .clases , .packClases , .contacto {
-            background: linear-gradient(38deg, black, yellow 40% ); 
+            background: linear-gradient(38deg, $colornegro, yellow 40% ); 
             margin: 10px 10px;
             width: 320px;
             height: 160px;
             padding: 20px;
-            border-color: black;
-            border: 2px solid black;
-            color: black;
+            border-color: $colornegro;
+            border: 2px solid $colornegro;
+            color: $colornegro;
             display: inline;
+            text-align: center;
         } 
-        ul {
-            font-family: 'Bruno Ace SC', sans-serif;
+        .link {
+            font-family: $fuentebruno;
             font-size: 20px;
             list-style: none;
             font-weight: bold;
-            text-align: center;
             padding-left: 0;
             text-decoration: none;
         }   
@@ -75,7 +73,7 @@ body {
         display: grid;
         width: 100%;
         height: auto;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: $doscolumnas;
         padding: 5px; 
         column-gap: 5px;
         grid-row-gap: 5px;
@@ -108,7 +106,7 @@ body {
         display: grid;
         width: 100%;
         height: auto;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: $doscolumnas;
         padding: 5px; 
         column-gap: 5px;
         justify-items: center;
@@ -152,7 +150,7 @@ div.eventos {
     }
 .subtituloClase, .subTitulo {
     text-decoration: underline;
-    font-family: "Bruno Ace SC", sans-serif;
+    font-family: $fuentebruno;
     font-size: 30px;
     margin: 5px 0px 0px 0px;
 }
@@ -160,7 +158,7 @@ div.eventos {
     //768
     
     body {
-        width: max-content;
+        width: fit-content;
     }
     
     h1 {
@@ -176,9 +174,9 @@ div.eventos {
         align-content: center;
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: 170px;
         margin: auto auto 80px auto;
         gap: 25px;
-        width: fit-content;
     }
     section.contacto {
         margin: 10px 10px;
@@ -189,7 +187,7 @@ div.eventos {
         max-width: 760px;
         width: 100%;
         height: auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));;
         padding: 5px; 
         
     }
